@@ -16,6 +16,7 @@ for (let i = 0; i < numEmails; i++) {
             // creiamo un nuovo elemento <li> con l'email ricevuta
             const emailLi = document.createElement("li");
             emailLi.textContent = email;
+            emailLi.classList.add("list-group-item");
 
             // aggiungiamo l'elemento alla lista
             emailList.appendChild(emailLi);
@@ -25,6 +26,7 @@ for (let i = 0; i < numEmails; i++) {
             // creiamo un nuovo elemento <li> con il messaggio di errore
             const emailLiError = document.createElement("li");
             emailLiError.textContent = "API non caricato correttamente";
+            emailLiError.classList.add("list-group-item");
 
             // aggiungiamo l'elemento alla lista
             emailList.appendChild(emailLiError);
