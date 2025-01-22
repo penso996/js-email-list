@@ -14,7 +14,7 @@ for (let i = 0; i < numEmails; i++) {
             const email = apiEmail.data.response;
 
             // creiamo un nuovo elemento <li> con l'email ricevuta
-            const emailLi = document.createElement('li');
+            const emailLi = document.createElement("li");
             emailLi.textContent = email;
 
             // aggiungiamo l'elemento alla lista
@@ -23,7 +23,7 @@ for (let i = 0; i < numEmails; i++) {
         .catch(error => {
             // codice da eseguire in caso di ERRORE
             // creiamo un nuovo elemento <li> con il messaggio di errore
-            const emailLiError = document.createElement('li');
+            const emailLiError = document.createElement("li");
             emailLiError.textContent = "API non caricato correttamente";
 
             // aggiungiamo l'elemento alla lista
