@@ -1,9 +1,9 @@
 // selezioniamo l'elemento di output
-const emailList = document.getElementById('email-list');
+const emailList = document.getElementById("email-list");
 
 // settiamo il numero di email da generare e l'endpoint
 const numEmails = 10;
-const endpoint = 'https://flynn.boolean.careers/exercises/api/random/mail';
+const endpoint = "https://flynn.boolean.careers/exercises/api/random/mail";
 
 // facciamo partire le richieste verso l'API
 for (let i = 0; i < numEmails; i++) {
